@@ -4,12 +4,14 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
             background-color: #005baa;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         nav {
             background-color: #004080;
             padding: 10px;
@@ -17,22 +19,28 @@
             position: sticky;
             top: 0;
         }
+
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
         section {
             padding: 20px;
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             color: #333;
         }
+
         p {
             color: #555;
             line-height: 1.6;
         }
+
         footer {
             background-color: #005baa;
             color: white;
@@ -42,19 +50,24 @@
             width: 100%;
             bottom: 0;
         }
+
         /* Sección de Plan de Estudios */
         .study-plan table {
             width: 100%;
             border-collapse: collapse;
         }
-        .study-plan th, .study-plan td {
+
+        .study-plan th,
+        .study-plan td {
             border: 1px solid #ddd;
             padding: 8px;
         }
+
         .study-plan th {
             background-color: #004080;
             color: white;
         }
+
         /* Estilos para el formulario */
         .formulario {
             background-color: #e6f7ff;
@@ -63,18 +76,22 @@
             max-width: 600px;
             margin: auto;
         }
+
         .formulario label {
             display: block;
             margin-bottom: 10px;
             font-weight: bold;
         }
-        .formulario input, .formulario select {
+
+        .formulario input,
+        .formulario select {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
             border-radius: 5px;
             border: 1px solid #ccc;
         }
+
         .formulario button {
             background-color: #004080;
             color: white;
@@ -83,6 +100,7 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         .formulario button:hover {
             background-color: #005baa;
         }
