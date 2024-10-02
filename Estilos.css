@@ -4,32 +4,39 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
             background-color: #005baa;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         nav {
             background-color: #004080;
             padding: 10px;
             text-align: center;
         }
+
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
         }
+
         section {
             padding: 20px;
         }
+
         h1 {
             color: #333;
         }
+
         p {
             color: #555;
             line-height: 1.6;
         }
+
         footer {
             background-color: #005baa;
             color: white;
