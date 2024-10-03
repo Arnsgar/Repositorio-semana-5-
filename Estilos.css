@@ -95,56 +95,55 @@
             color: white;
         }
 
-        /* Estilos para el formulario */
-        /* Estilos para el formulario */
-        .formulario {
-            background-color: #e6f7ff;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: auto;
-        }
-
-        .formulario label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .formulario input[type="text"],
-        .formulario input[type="password"],
-        .formulario input[type="email"],
-        .formulario input[type="tel"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .formulario input[type="checkbox"] {
-            margin-right: 10px;
-        }
-
-        .formulario button {
+        /* Estilos del botón */
+        #abrirFormulario {
             background-color: #004080;
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 10px;
         }
 
-        .formulario button:hover {
+        #abrirFormulario:hover {
             background-color: #005baa;
         }
 
-        .formulario a {
-            color: #004080;
-            text-decoration: none;
+        /* Estilos del Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
         }
 
-        .formulario a:hover {
-            text-decoration: underline;
+        .modal-contenido {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .cerrar {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cerrar:hover,
+        .cerrar:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
         }
