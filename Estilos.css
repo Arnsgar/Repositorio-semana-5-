@@ -1,20 +1,40 @@
-      id 
-      body {
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(rgb(97, 97, 93),rgb(194, 184, 92));
         }
-
         header {
-            background-color: #005baa;
+            display: grid;
+            grid-template-columns: 1fr 0.1fr;
+
+            background: linear-gradient(rgb(231, 230, 161),rgb(189, 171, 13));
             color: white;
             padding: 20px;
             text-align: center;
         }
 
-        #navegacion {
-            background-color: #004080;
+        .contenido{
+            border: 2px solid #686464; 
+            padding: 1%; /* Separación interna (padding) entre el contenido y los bordes */
+            margin: 40px auto; /* Separación externa (margin) para que la caja no esté pegada a los bordes de la página */
+            max-width: 800px; /* Ancho máximo de la caja */
+            background-color: #1e3c9ebd; /* Color de fondo de la caja */
+          
+        }
+
+        .imagen img{
+            display: block;
+            margin-left: auto;
+            margin-right: 10%;
+          margin-top:20%;
+            width: 100%;
+            height: auto;
+            position: center;
+        }
+        nav {
+            background-color: #fbff02;
+            
             padding: 10px;
             text-align: center;
             position: sticky;
@@ -22,26 +42,21 @@
         }
 
         nav a {
-            color: white;
+            color: rgb(0, 0, 0);
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
-
         section {
             padding: 20px;
         }
-
-        h1,
-        h2 {
+        h1, h2 {
             color: #333;
         }
-
         p {
             color: #555;
             line-height: 1.6;
         }
-
         footer {
             background-color: #005baa;
             color: white;
@@ -51,24 +66,19 @@
             width: 100%;
             bottom: 0;
         }
-
         /* Sección de Plan de Estudios */
         .study-plan table {
             width: 100%;
             border-collapse: collapse;
         }
-
-        .study-plan th,
-        .study-plan td {
+        .study-plan th, .study-plan td {
             border: 1px solid #ddd;
             padding: 8px;
         }
-
         .study-plan th {
             background-color: #004080;
             color: white;
         }
-
         /* Estilos para el formulario */
         .formulario {
             background-color: #e6f7ff;
@@ -77,22 +87,18 @@
             max-width: 600px;
             margin: auto;
         }
-
         .formulario label {
             display: block;
             margin-bottom: 10px;
             font-weight: bold;
         }
-
-        .formulario input,
-        .formulario select {
+        .formulario input, .formulario select {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
             border-radius: 5px;
             border: 1px solid #ccc;
         }
-
         .formulario button {
             background-color: #004080;
             color: white;
@@ -101,7 +107,6 @@
             border-radius: 5px;
             cursor: pointer;
         }
-
         .formulario button:hover {
             background-color: #005baa;
         }
