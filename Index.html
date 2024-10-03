@@ -28,72 +28,87 @@
             <a href="#inscripcion">Formulario de Inscripción</a>
         </nav>
 
-    <div class="contenido">
-    <!-- Sección de Plan de Estudios -->
-    <section id="plan-estudios">
-        <h2 id="titulo_planE">Plan de Estudios</h2>
-        <p>El plan de estudios se organiza por semestres y proporciona una formación integral en áreas de programación, sistemas y tecnología informática.</p>
-        <div class="study-plan">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Semestre</th>
-                        <th>Asignatura</th>
-                        <th>Créditos</th>
-                        <th>Intensidad Horaria</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Programación Básica</td>
-                        <td>3</td>
-                        <td>5 horas/semana</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Matemáticas</td>
-                        <td>4</td>
-                        <td>6 horas/semana</td>
-                    </tr>
-                    <!-- Añade más filas según sea necesario -->
-                </tbody>
-            </table>
-        </div>
-    </section>
+        <div class="contenido">
+            <!-- Sección de Plan de Estudios -->
+            <section id="plan-estudios">
+                <h2 id="titulo_planE">Plan de Estudios</h2>
+                <p>El plan de estudios se organiza por semestres y proporciona una formación integral en áreas de
+                    programación, sistemas y tecnología informática.</p>
+                <div class="study-plan">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Semestre</th>
+                                <th>Asignatura</th>
+                                <th>Créditos</th>
+                                <th>Intensidad Horaria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Programación Básica</td>
+                                <td>3</td>
+                                <td>5 horas/semana</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Matemáticas</td>
+                                <td>4</td>
+                                <td>6 horas/semana</td>
+                            </tr>
+                            <!-- Añade más filas según sea necesario -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-    <!-- Sección de Grupos de Investigación -->
-    <section id="grupos-investigacion">
-        <h2 id="titulo_gruposI">Grupos de Investigación</h2>
-        <p>Conozca los grupos de investigación del programa y sus áreas de enfoque.</p>
-        <div>
-            <h3>Grupo de Investigación XYZ</h3>
-            <p>Descripción del grupo, logros y proyectos actuales.</p>
-            <img src="logo_grupo.png" alt="Logo Grupo XYZ" width="100">
-        </div>
-        <!-- Añade más grupos de investigación aquí -->
-    </section>
+            <!-- Sección de Grupos de Investigación -->
+            <section id="grupos-investigacion">
+                <h2 id="titulo_gruposI">Grupos de Investigación</h2>
+                <p>Conozca los grupos de investigación del programa y sus áreas de enfoque.</p>
+                <div>
+                    <h3>Grupo de Investigación XYZ</h3>
+                    <p>Descripción del grupo, logros y proyectos actuales.</p>
+                    <img src="logo_grupo.png" alt="Logo Grupo XYZ" width="100">
+                </div>
+                <!-- Añade más grupos de investigación aquí -->
+            </section>
 
-    <!-- Sección de Misión y Visión -->
-    <section id="mision-vision">
-        <h2 id="titulo_mision">Misión y Visión</h2>
-        <p><strong>Misión:</strong> Formar profesionales en el campo de la programación, preparados para afrontar los desafíos del mundo tecnológico.</p>
-        <p><strong>Visión:</strong> Ser un referente nacional en la enseñanza de la programación y el desarrollo de sistemas.</p>
-    </section>
+            <!-- Sección de Misión y Visión -->
+            <section id="mision-vision">
+                <h2 id="titulo_mision">Misión y Visión</h2>
+                <p><strong>Misión:</strong> Formar profesionales en el campo de la programación, preparados para
+                    afrontar los desafíos del mundo tecnológico.</p>
+                <p><strong>Visión:</strong> Ser un referente nacional en la enseñanza de la programación y el desarrollo
+                    de sistemas.</p>
+            </section>
 
-    <!-- Sección de Perfil Ocupacional -->
-    <section id="perfil-ocupacional">
-        <h2 id="titulo_perfil">Perfil Ocupacional</h2>
-        <p>Los egresados del programa estarán capacitados para desempeñarse como desarrolladores de software, analistas de sistemas, y administradores de bases de datos.</p>
-    </section>
+            <!-- Sección de Perfil Ocupacional -->
+            <section id="perfil-ocupacional">
+                <h2 id="titulo_perfil">Perfil Ocupacional</h2>
+                <p>Los egresados del programa estarán capacitados para desempeñarse como desarrolladores de software,
+                    analistas de sistemas, y administradores de bases de datos.</p>
+            </section>
 
-    <!-- Formulario de Inscripción -->
-    <section id="inscripcion">
-        <h2 id="titulo_formulario">Formulario de Inscripción</h2>
-        <div class="formulario">
-            <form action="#" method="post">
-                <label for="nombres">Nombres:</label>
-                <input type="text" id="nombres" name="nombres" required>
+            <!-- Botón que abre el formulario -->
+            <section id="inscripcion">
+                <h2>Formulario de Registro</h2>
+                <button id="abrirFormulario">Abrir Formulario</button>
+            </section>
+
+            <!-- Ventana Modal para el Formulario -->
+            <div id="modalFormulario" class="modal">
+                <div class="modal-contenido">
+                    <span class="cerrar">&times;</span>
+                    <h2>Formulario de Registro</h2>
+                    <div class="formulario">
+                        <form id="registroForm" action="#" method="post">
+                            <label for="usuario">Usuario:</label>
+                            <input type="text" id="usuario" name="usuario" required>
+
+                            <label for="nombres">Nombres:</label>
+                            <input type="text" id="nombres" name="nombres" required>
 
                             <label for="apellidos">Apellidos:</label>
                             <input type="text" id="apellidos" name="apellidos" required>
@@ -122,26 +137,23 @@
             </div>
 
 
-    </div>
+            <div class="cont_infoacademica">
 
-   
-    <div class="cont_infoacademica">
+            </div>
+            <div class="cont_docentes">
 
-    </div>
-    <div class="cont_docentes">
+            </div>
+            <div class="cont_misionvision">
 
-    </div>
-    <div class="cont_misionvision">
-
-    </div>
+            </div>
 
 
 
 
 
-    <footer>
-        <p>&copy; 2024 Universidad Pedagógica y Tecnológica de Colombia - Todos los derechos reservados.</p>
-    </footer>
+            <footer>
+                <p>&copy; 2024 Universidad Pedagógica y Tecnológica de Colombia - Todos los derechos reservados.</p>
+            </footer>
 
 </body>
 
