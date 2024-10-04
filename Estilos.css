@@ -15,6 +15,23 @@
             text-align: center;
         }
 
+        .resumen {
+            display: flex; /* Habilita el modo flexbox */
+            justify-content: space-around; /* Distribuye el espacio entre los párrafos */
+            text-align: center;
+        } 
+        .resumen p{
+           width: 30%; /* Ajusta el ancho de cada párrafo */
+        }
+        .informacion{
+          display:flex;
+          align-items: flex-end;
+        }
+        .informacion img{
+          width:40%;
+          height:auto;
+        }
+
         #plan-estudios {
             color: #ffffff;
         }
@@ -88,13 +105,13 @@
         }
 
         footer p {
-            background-color: #ffffff;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 10px;
-            margin: -20px;
-            width: 100%;
-            bottom: 0;
+            background-color: #ffffff; /* Color de fondo del pie de página */
+            color: rgb(0, 0, 0); /* Color del texto */
+            text-align: center; /* Centra el texto */
+            padding: 10px 0; /* Espacio interno (padding) */
+            width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+            position: relative; /* Se asegura de que el pie esté en la parte inferior */
+                
         }
 
         /* Estilos generales de la sección */
@@ -130,7 +147,7 @@
         #botonMision:hover+#contenidoMision,
         #botonVision:hover+#contenidoVision {
             display: block;
-
+        }
             /* Sección de Plan de Estudios */
             .study-plan table {
                 width: 100%;
@@ -147,7 +164,7 @@
                 background-color: #004080;
                 color: white;
             }
-        }
+        
 
         /* Estilos del botón */
         #abrirFormulario {
