@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Programa de Tecnología en Programación de Sistemas Informáticos">
     <link rel="stylesheet" href="estilos.css" type="text/css">
-
-
 </head>
-
 <body>
     <div class="cont_presentacion">
         <header>
@@ -17,9 +14,7 @@
             <div class="imagen">
                 <img src="Imagenes/Logo_de_la_UPTC.png" alt="Logo">
             </div>
-
         </header>
-
         <nav>
             <a href="#plan-estudios">Plan de Estudios</a>
             <a href="#grupos-investigacion">Grupos de Investigación</a>
@@ -29,38 +24,67 @@
         </nav>
 
         <div class="contenido">
+            <p>
+                En un mundo cada vez más interconectado y digital, la Tecnología en Programación de Sistemas Informáticos se presenta como una de las carreras más emocionantes y relevantes del siglo XXI. Permitiendote tener el poder de transformar ideas en soluciones tecnológicas que impacten la vida de millones de personas.
+              </p>
+              <div class="resumen">
+                    <p><strong>Jornada<br></strong>Extendida </p>
+                    <p><strong>Nivel De Formacion Academica<br></strong>Tecnologo </p>
+                 <p><strong>Periocidad De Admision<br></strong>Semestral</p>
+                 <p><strong>Modalidad<br></strong>Virtual </p>
+                 
+                
+                </div>
+              <div class="informacion">
+              <p>
+                <strong>Programa académico:</strong> Tecnología en Programación de Sistemas Informáticos<br>
+                <strong>Título a otorgar:</strong> Tecnólogo(a) en Programación de Sistemas Informáticos<br>
+                <strong>SNIES:</strong> 54200<br>
+                <strong>Créditos académicos: </strong>96<br>
+                <strong>Duración:</strong> 6 Semestres<br>
+                <strong>Lugar de desarrollo:</strong> Tunja, Sogamoso, Duitama, Chiquinquirá, Bogotá, Garagoa, Aguazul, Soatá, Puerto Boyacá, Acacías, Paz de Ariporo, Villanueva.<br>
+              </p>
+                <img src="Imagenes/estudiante-universitario-nino-estudiando-en-una-computadora-portatil-con-libros-electronicos-2710149-2261433.webp" alt="Example Image" />
+              </div>
             <!-- Sección de Plan de Estudios -->
             <section id="plan-estudios">
                 <h2 id="titulo_planE">Plan de Estudios</h2>
                 <p>El plan de estudios se organiza por semestres y proporciona una formación integral en áreas de
                     programación, sistemas y tecnología informática.</p>
                 <div class="study-plan">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Semestre</th>
-                                <th>Asignatura</th>
-                                <th>Créditos</th>
-                                <th>Intensidad Horaria</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Programación Básica</td>
-                                <td>3</td>
-                                <td>5 horas/semana</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Matemáticas</td>
-                                <td>4</td>
-                                <td>6 horas/semana</td>
-                            </tr>
-                            <!-- Añade más filas según sea necesario -->
-                        </tbody>
-                    </table>
-                </div>
+                   <h3>Semestres</h3>
+                    <hr>
+                    <div class="contenedor_botones">
+
+                        <button class="boton" onclick="mostrarInfo(1)">1</button>
+           
+                        <button class="boton" onclick="mostrarInfo(2)">2</button>
+          
+                        <button class="boton" onclick="mostrarInfo(3)">3</button>
+          
+                        <button class="boton" onclick="mostrarInfo(4)">4</button>
+          
+                        <button class="boton" onclick="mostrarInfo(5)">5</button>
+           
+                        <button class="boton" onclick="mostrarInfo(6)">6</button>
+                     
+                     
+                   </div>
+                 
+                   <div class="asignaturas">
+                
+              
+                    <div class="titulo_semestres">
+                          <p><strong>Codigo Asignatura Creditos</strong></p>
+                    
+                    </div>
+                    
+                         <div class="informacion_texto" id="informacion_texto">  8107248	Fundamentos-de-Programación	<strong>3</strong><br>8107249	Cátedra-Upetecista	<strong>1</strong><br>8107250	Álgebra-Lineal	<strong>3</strong> <br>8107251	Probabilidad-y-Estadística	<strong>3</strong><br>8107252	Métodos-de-Estudio-y-Competencias-Comunicativas	<strong>3</strong><br>8107253	Informática	<strong>2</strong></div>
+                       
+                          
+                    </div>  
+                    </div>
+ 
             </section>
 
             <!-- Sección de Grupos de Investigación -->
@@ -76,7 +100,7 @@
             </section>
 
             <section id="misionVision">
-                <h2>Misión y Visión</h2>
+                <h2 id="titulo_misvis">Misión y Visión</h2>
 
                 <div class="botones-mv">
                     <button class="boton-mv" id="botonMision">Misión</button>
@@ -112,7 +136,7 @@
             <div id="modalFormulario" class="modal">
                 <div class="modal-contenido">
                     <span class="cerrar">&times;</span>
-                    <h2>Formulario de Registro</h2>
+                    <h2 id="titulo_formulario">Formulario de Registro</h2>
                     <div class="formulario">
                         <form id="registroForm" action="#" method="post">
                             <label for="usuario">Usuario:</label>
@@ -166,6 +190,7 @@
                 <p>&copy; 2024 Universidad Pedagógica y Tecnológica de Colombia - Todos los derechos reservados.</p>
             </footer>
 
+            <script src="script.js"></script>
 </body>
 
 </html>

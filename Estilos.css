@@ -11,9 +11,42 @@
 
             background: linear-gradient(rgb(231, 230, 161), rgb(189, 171, 13));
             color: white;
-            padding: 20px;
+            padding: 17px;
             text-align: center;
         }
+        .asignaturas{
+            text-align:left;
+            padding-left:10%;
+            font-size: 17px;
+          }
+          .titulo_semestres{
+            word-spacing:5em;
+          }
+          .informacion_texto{
+            word-spacing:2em;
+            
+          }
+
+          .contenedor_botones {
+            position:relative;
+            margin-left:30%;
+            margin-right:30%;
+            text-align:center;
+          }
+          
+          .contenedor_botones .boton {
+              margin: 5px; /* Espacio entre botones */
+              padding: 10px 15px;
+              font-size: 16px;
+              cursor: pointer;
+              box-shadow:5px 15px 6px 1px black;
+            border-radius:  1px double black;
+            background-color: #33a7dd; 
+            clip-path: polygon(50% -40%, -10% 110%, 110% 110%); /* Forma de trapecio */
+              z-index: -1;
+            
+          }
+          
 
         .resumen {
             display: flex; /* Habilita el modo flexbox */
@@ -28,7 +61,7 @@
           align-items: flex-end;
         }
         .informacion img{
-          width:40%;
+          width:25%;
           height:auto;
         }
 
@@ -66,7 +99,7 @@
             background-color: rgb(253, 238, 22);
             box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 
-
+            z-index: 100;
             padding: 10px;
             text-align: center;
             position: sticky;
@@ -149,21 +182,7 @@
             display: block;
         }
             /* Sección de Plan de Estudios */
-            .study-plan table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-
-            .study-plan th,
-            .study-plan td {
-                border: 1px solid #ddd;
-                padding: 8px;
-            }
-
-            .study-plan th {
-                background-color: #004080;
-                color: white;
-            }
+           
         
 
         /* Estilos del botón */
