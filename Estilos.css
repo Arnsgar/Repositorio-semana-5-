@@ -12,157 +12,187 @@
             background: linear-gradient(rgb(231, 230, 161), rgb(189, 171, 13));
             color: white;
             padding-left: 17px;
-           padding-right: 17px;
-           padding-bottom: 17px;
+            padding-right: 17px;
+            padding-bottom: 17px;
             align-items: center;
             text-align: center;
         }
-        .perfil img{
-            width:40%;
-            padding-left:30%;
-            padding-right:30%;
-          }
+
+        .perfil img {
+            width: 40%;
+            padding-left: 30%;
+            padding-right: 30%;
+        }
 
         .pestañas {
             background-color: rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .pestaña {
             cursor: pointer;
             border-bottom: 1px solid #ddd;
             padding: 10px 15px;
         }
-        
+
         .pestaña:last-child {
-            border-bottom: none; 
+            border-bottom: none;
         }
-        
+
         .contenidoGI {
-            display: none; /* Oculta el contenido inicialmente */
+            display: none;
+            /* Oculta el contenido inicialmente */
             padding: 15px;
             transition: max-height 1s ease, opacity 0.3s ease;
             opacity: 0;
-            max-height: 0; /* Hace que el contenido esté colapsado */
-            overflow: hidden; /* Evita el desbordamiento del contenido */
+            max-height: 0;
+            /* Hace que el contenido esté colapsado */
+            overflow: hidden;
+            /* Evita el desbordamiento del contenido */
         }
-        
+
         .contenidoGI.mostrar {
             display: block;
-            opacity: 1; 
-            max-height: 500px; 
+            opacity: 1;
+            max-height: 500px;
         }
 
-        .cajas_mv{
-            display: flex; 
-         gap:20px;
-            justify-content: space-around; 
+        .cajas_mv {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
             text-align: center;
-         margin:5px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-         
-         
-       }
-       .caja_vision,.caja_mision{
-          width: 100%;
-                   height: 200px;
-                   transform-style: preserve-3d; /* Preserva el espacio 3D */
-                   transition: transform 4s; /* Transición de transformación */
-       }
-       
-       .caja_vision:hover{
-         transform:rotatey(180deg);
-         position:relative;
-       }
-               .caja_mision:hover {
-                   transform: rotateY(180deg); /* Rotación al pasar el mouse */
-                 position:relative;
-                 
-               }
-       
-               
-               .frente, .detras,.frente2,.detras2 {
-                 
-                  overflow: hidden; /* Oculta el desbordamiento en la cara frontal */
-                 border-radius: 4px;
-                 position:absolute;
-                   width: 100%;
-                   height: 100%;
-                   backface-visibility: hidden; /* Oculta la parte posterior cuando no está visible */
-                   display: flex;
-                   justify-content: center;
-                   align-items: center;
-                   color: white;
-               }
-       
-               
-               .frente,.frente2 {
-               
-                font-size:25px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                   background-color: rgb(74, 133, 192); /* Color de la parte delantera */
-                 
-               }
-               
-               .detras,.detras2 {
-                   background-color:rgb(152, 152, 152); /* Color de la parte trasera */
-                   transform: rotateY(180deg); /* Gira la parte trasera para que esté oculta al inicio */
-                  overflow: auto;
-               }
-       
+            margin: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
 
-        .asignaturas{
-            text-align:left;
-            padding-left:10%;
+        }
+
+        .caja_vision,
+        .caja_mision {
+            width: 100%;
+            height: 200px;
+            transform-style: preserve-3d;
+            /* Preserva el espacio 3D */
+            transition: transform 4s;
+            /* Transición de transformación */
+        }
+
+        .caja_vision:hover {
+            transform: rotatey(180deg);
+            position: relative;
+        }
+
+        .caja_mision:hover {
+            transform: rotateY(180deg);
+            /* Rotación al pasar el mouse */
+            position: relative;
+
+        }
+
+
+        .frente,
+        .detras,
+        .frente2,
+        .detras2 {
+
+            overflow: hidden;
+            /* Oculta el desbordamiento en la cara frontal */
+            border-radius: 4px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            /* Oculta la parte posterior cuando no está visible */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+
+        .frente,
+        .frente2 {
+
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(74, 133, 192);
+            /* Color de la parte delantera */
+
+        }
+
+        .detras,
+        .detras2 {
+            background-color: rgb(152, 152, 152);
+            /* Color de la parte trasera */
+            transform: rotateY(180deg);
+            /* Gira la parte trasera para que esté oculta al inicio */
+            overflow: auto;
+        }
+
+
+
+        .asignaturas {
+            text-align: left;
+            padding-left: 10%;
             font-size: 17px;
-          }
-          .titulo_semestres{
-            word-spacing:5em;
-          }
-          .informacion_texto{
-            word-spacing:2em;
-            
-          }
+        }
 
-          .contenedor_botones {
-            position:relative;
-            margin-left:30%;
-            margin-right:30%;
-            text-align:center;
-          }
-          
-          .contenedor_botones .boton {
-              margin: 5px; /* Espacio entre botones */
-              padding: 10px 15px;
-              font-size: 16px;
-              cursor: pointer;
-              box-shadow:5px 15px 6px 1px black;
-            border-radius:  1px double black;
-            background-color: #33a7dd; 
-            clip-path: polygon(50% -40%, -10% 110%, 110% 110%); /* Forma de trapecio */
-              z-index: -1;
-            
-          }
-          
+        .titulo_semestres {
+            word-spacing: 5em;
+        }
+
+        .informacion_texto {
+            word-spacing: 2em;
+
+        }
+
+        .contenedor_botones {
+            position: relative;
+            margin-left: 30%;
+            margin-right: 30%;
+            text-align: center;
+        }
+
+        .contenedor_botones .boton {
+            margin: 5px;
+            /* Espacio entre botones */
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 5px 15px 6px 1px black;
+            border-radius: 1px double black;
+            background-color: #33a7dd;
+            clip-path: polygon(50% -40%, -10% 110%, 110% 110%);
+            /* Forma de trapecio */
+            z-index: -1;
+
+        }
+
 
         .resumen {
-            display: flex; /* Habilita el modo flexbox */
-            justify-content: space-around; /* Distribuye el espacio entre los párrafos */
+            display: flex;
+            /* Habilita el modo flexbox */
+            justify-content: space-around;
+            /* Distribuye el espacio entre los párrafos */
             text-align: center;
-        } 
-        .resumen p{
-           width: 30%; /* Ajusta el ancho de cada párrafo */
         }
-        .informacion{
-          display:flex;
-          align-items: flex-end;
+
+        .resumen p {
+            width: 30%;
+            /* Ajusta el ancho de cada párrafo */
         }
-        .informacion img{
-          width:25%;
-          height:auto;
-        
+
+        .informacion {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .informacion img {
+            width: 25%;
+            height: auto;
+
         }
 
         #plan-estudios {
@@ -197,22 +227,22 @@
 
         nav {
             background-color: rgb(253, 238, 22);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
 
 
-nav a {
-    color: rgb(0, 0, 0);
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
         section {
             padding: 20px;
@@ -239,26 +269,32 @@ nav a {
         }
 
         footer {
-            display:flex;
-            gap:20px;
-            align-items:center;
-                     background-color: #ffffff; /* Color de fondo del pie de página */
-                     padding: 10px 0; /* Espacio interno (padding) */
-                     width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
-                     position: relative; 
-                         
-                 }
-                 footer p{
-                    color: rgb(0, 0, 0); /* Color del texto */
-                    text-align: left; /* Centra el texto */
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            background-color: #ffffff;
+            /* Color de fondo del pie de página */
+            padding: 10px 0;
+            /* Espacio interno (padding) */
+            width: 100%;
+            /* Asegura que el pie de página ocupe todo el ancho */
+            position: relative;
 
-                 }
-                 footer img{
-  
-                    width:25%;
-                    height:60%
-                      
-                  }
+        }
+
+        footer p {
+            color: rgb(0, 0, 0);
+            /* Color del texto */
+            text-align: left;
+            /* Centra el texto */
+
+        }
+
+        footer img {
+
+            width: 25%;
+            height: 60%
+        }
 
         /* Estilos generales de la sección */
         #botonMision,
@@ -294,9 +330,10 @@ nav a {
         #botonVision:hover+#contenidoVision {
             display: block;
         }
-            /* Sección de Plan de Estudios */
-           
-        
+
+        /* Sección de Plan de Estudios */
+
+
 
         /* Estilos del botón */
         #abrirFormulario {

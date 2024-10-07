@@ -16,21 +16,21 @@ function abrirGrupo(pestaña) {
 
 //Texto Perfil Ocupacional
 const textoPerfil = document.getElementById("texto_perfil");
-textoPerfil.textContent='El (la) Tecnólogo(a) en Programación de Sistemas Informáticos de la Universidad de Pedagógica y Tecnológica de Colombia, desarrolla soluciones de software que requiere la empresa y la industria a nivel local, nacional e internacional; aplica metodologías, técnicas, tecnologías y estándares internacionales en el ciclo de desarrollo de software, soporte y mantenimiento de infraestructura tecnológica a través de la investigación y la innovación; realiza procesos de soporte y mantenimiento de infraestructura y componentes informáticos de una organización. Trabaja en equipo y se comunica de manera asertiva para relacionarse con el cliente y el entorno laboral para el desarrollo de sus actividades profesionales; emprende sus propias ideas de negocio, para crear empresas de base tecnológica de baja y media complejidad.';
+textoPerfil.textContent = 'El (la) Tecnólogo(a) en Programación de Sistemas Informáticos de la Universidad de Pedagógica y Tecnológica de Colombia, desarrolla soluciones de software que requiere la empresa y la industria a nivel local, nacional e internacional; aplica metodologías, técnicas, tecnologías y estándares internacionales en el ciclo de desarrollo de software, soporte y mantenimiento de infraestructura tecnológica a través de la investigación y la innovación; realiza procesos de soporte y mantenimiento de infraestructura y componentes informáticos de una organización. Trabaja en equipo y se comunica de manera asertiva para relacionarse con el cliente y el entorno laboral para el desarrollo de sus actividades profesionales; emprende sus propias ideas de negocio, para crear empresas de base tecnológica de baja y media complejidad.';
 //Funcion para cambiar el texto Mision y Vision en Pantallas Pequeñas
 function ajustarTexto() {
     const textoMision = document.getElementById('detras');
     const textoVision = document.getElementById('detras2');
-    
+
     if (window.innerWidth <= 1000) {
         textoMision.textContent = 'mision resumido.';
-        textoVision.textContent='vision resumida';
-        
+        textoVision.textContent = 'vision resumida';
+
     } else {
-        textoMision.textContent = 'El programa de Tecnología en Programación de Sistemas Informático tiene como misión: formar tecnólogos con valores éticos y morales, que desarrollar habilidades y destrezas fundamentadas en el conocimiento específico de los sistemasinformáticos y las TIC, para que contribuyan al desarrollo y la competitividad de las empresas y del país. Apoyando procesos de diseño, modernización e implantación de soluciones de software y tecnología en la empresa.'; 
-        textoVision.textContent='Ser el programa de Tecnología en Programación de Sistemas Informáticos de mayor calidad en el país, y de la misma manera tener la mayor cobertura posible a  nivel nacional, de manera que los Tecnólogos egresados de este programa tengan acceso laboral inmediato y la capacidad de formar su propia empresa, para que contribuyan al desarrollo de su región y del país.; lograr a mediano plazo la formación de Tecnólogos en Programación de Sistemas Informáticos que atiendan las necesidades que el medio empresarial exige, utilizando las TIC, modelos educativos adecuados y un grupo de docentes comprometido con el mejoramiento continuo del programa, bajo un marco de interdisciplinaridad y mayor cobertura nacional.';
+        textoMision.textContent = 'El programa de Tecnología en Programación de Sistemas Informático tiene como misión: formar tecnólogos con valores éticos y morales, que desarrollar habilidades y destrezas fundamentadas en el conocimiento específico de los sistemasinformáticos y las TIC, para que contribuyan al desarrollo y la competitividad de las empresas y del país. Apoyando procesos de diseño, modernización e implantación de soluciones de software y tecnología en la empresa.';
+        textoVision.textContent = 'Ser el programa de Tecnología en Programación de Sistemas Informáticos de mayor calidad en el país, y de la misma manera tener la mayor cobertura posible a  nivel nacional, de manera que los Tecnólogos egresados de este programa tengan acceso laboral inmediato y la capacidad de formar su propia empresa, para que contribuyan al desarrollo de su región y del país.; lograr a mediano plazo la formación de Tecnólogos en Programación de Sistemas Informáticos que atiendan las necesidades que el medio empresarial exige, utilizando las TIC, modelos educativos adecuados y un grupo de docentes comprometido con el mejoramiento continuo del programa, bajo un marco de interdisciplinaridad y mayor cobertura nacional.';
     }
-} 
+}
 
 // Llama a la función al cargar la página
 ajustarTexto();
