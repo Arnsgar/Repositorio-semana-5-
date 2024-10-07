@@ -17,6 +17,11 @@
             align-items: center;
             text-align: center;
         }
+        .perfil img{
+            width:40%;
+            padding-left:30%;
+            padding-right:30%;
+          }
 
         .pestañas {
             background-color: rgba(0, 0, 0, 0.3);
@@ -157,6 +162,7 @@
         .informacion img{
           width:25%;
           height:auto;
+        
         }
 
         #plan-estudios {
