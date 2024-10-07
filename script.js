@@ -1,9 +1,3 @@
-
-// Obtener los elementos del DOM
-const modal = document.getElementById("modalFormulario");
-const btnAbrir = document.getElementById("abrirFormulario");
-const spanCerrar = document.getElementsByClassName("cerrar")[0];
-
 //Funcion De Grupos de Investigacion
 function abrirGrupo(pestaña) {
     const contenido = pestaña.querySelector('.contenidoGI');//selecciona el primer contenido o sea de esta pestaña
@@ -89,6 +83,10 @@ form.addEventListener('submit', function (event) {
 });
 
 
+// Obtener los elementos del DOM
+const modal = document.getElementById("modalFormulario");
+const btnAbrir = document.getElementById("abrirFormulario");
+const spanCerrar = document.getElementsByClassName("cerrar")[0];
 // Abrir el modal cuando se hace clic en el botón
 btnAbrir.onclick = function () {
     modal.style.display = "flex";  // Mostrar el modal con flexbox para centrarlo
