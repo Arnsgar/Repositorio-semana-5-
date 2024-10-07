@@ -23,6 +23,7 @@
             <a href="#inscripcion">Formulario de Inscripción</a>
         </nav>
 
+    </div>
         <div class="contenido">
             <p>
                 En un mundo cada vez más interconectado y digital, la Tecnología en Programación de Sistemas Informáticos se presenta como una de las carreras más emocionantes y relevantes del siglo XXI. Permitiendote tener el poder de transformar ideas en soluciones tecnológicas que impacten la vida de millones de personas.
@@ -91,44 +92,91 @@
             <section id="grupos-investigacion">
                 <h2 id="titulo_gruposI">Grupos de Investigación</h2>
                 <p>Conozca los grupos de investigación del programa y sus áreas de enfoque.</p>
-                <div>
-                    <h3>Grupo de Investigación XYZ</h3>
-                    <p>Descripción del grupo, logros y proyectos actuales.</p>
-                    <img src="logo_grupo.png" alt="Logo Grupo XYZ" width="100">
+               
+               
+                   
+                <div class="pestañas">
+                    <div class="pestaña" onclick="abrirGrupo(this)">
+                        <h3>TICA Tecnologia Investigacion y Ciencia Aplicada</h3>
+
+                        <div class="contenidoGI">
+                            <p>Este es el contenido de la Pestaña 1. Aquí puedes agregar texto, imágenes o cualquier otro contenido.</p>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                        </div>
+                    </div>
+                    <div class="pestaña" onclick="abrirGrupo(this)">
+                        <h3>Grupo GTI Tecno-Innovaciones</h3>
+
+                        <div class="contenidoGI">
+                            <p>Este es el contenido de la Pestaña 2. Aquí puedes agregar más contenido diferente.</p>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                        </div>
+                    </div>
+                    <div class="pestaña" onclick="abrirGrupo(this)">
+                        <h3>Pestaña 3</h3>
+
+                        <div class="contenidoGI">
+                            <p>Este es el contenido de la Pestaña 3. Aquí puedes agregar cualquier cosa que desees.</p>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                        </div>
+                    </div>
+                    <div class="pestaña" onclick="abrirGrupo(this)">
+                        <h3>Pestaña 4</h3>
+
+                        <div class="contenidoGI">
+                            <p>Este es el contenido de la Pestaña 3. Aquí puedes agregar cualquier cosa que desees.</p>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                        </div>
+                    </div>
+                    <div class="pestaña" onclick="abrirGrupo(this)">
+                        <h3>Pestaña 5</h3>
+
+                        <div class="contenidoGI">
+                            <p>Este es el contenido de la Pestaña 3. Aquí puedes agregar cualquier cosa que desees.</p>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                        </div>
+                    </div>
+                    <div class="pestaña" onclick="abrirGrupo(this)">
+                        <h3>Pestaña 6</h3>
+
+                        <div class="contenidoGI">
+                            <p>Este es el contenido de la Pestaña 3. Aquí puedes agregar cualquier cosa que desees.</p>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                        </div>
+                    </div>
+
                 </div>
-                <!-- Añade más grupos de investigación aquí -->
+                
             </section>
 
             <section id="misionVision">
                 <h2 id="titulo_misvis">Misión y Visión</h2>
 
-                <div class="botones-mv">
-                    <button class="boton-mv" id="botonMision">Misión</button>
-                    <button class="boton-mv" id="botonVision">Visión</button>
-                </div>
-
-                <!-- Contenedores de Misión y Visión -->
-                <div class="contenido-mv" id="contenidoMision">
-                    <p>Nuestra misión es formar tecnólogos en programación de sistemas informáticos con habilidades
-                        técnicas y humanas, comprometidos con el desarrollo tecnológico y social.</p>
-                </div>
-
-                <div class="contenido-mv" id="contenidoVision">
-                    <p>Ser un programa líder en la formación de profesionales innovadores en el área de programación,
-                        con proyección nacional e internacional, generando soluciones tecnológicas de impacto.</p>
-                </div>
+                <div class="cajas_mv">
+              
+                    <div class="caja_mision">
+                        <div class="frente" id="frente">Misión</div>
+                        <div class="detras" id="detras"><br></div>
+                    </div>
+                  
+                    <div class="caja_vision">
+                        <div class="frente2" id="frente2">Vision</div>
+                        <div class="detras2" id="detras2"></div>
+                    </div>
+                  </div>
+            
             </section>
 
             <!-- Sección de Perfil Ocupacional -->
             <section id="perfil-ocupacional">
                 <h2 id="titulo_perfil">Perfil Ocupacional</h2>
-                <p>Los egresados del programa estarán capacitados para desempeñarse como desarrolladores de software,
+                <p id="texto_perfil">Los egresados del programa estarán capacitados para desempeñarse como desarrolladores de software,
                     analistas de sistemas, y administradores de bases de datos.</p>
             </section>
 
             <!-- Botón que abre el formulario -->
             <section id="inscripcion">
-                <h2>Formulario de Registro</h2>
+                <h2 id="titulo_form">Formulario de Registro</h2>
                 <button id="abrirFormulario">Abrir Formulario</button>
             </section>
 
@@ -170,25 +218,19 @@
                     </div>
                 </div>
             </div>
+        </div>
+            
 
-
-            <div class="cont_infoacademica">
-
-            </div>
-            <div class="cont_docentes">
-
-            </div>
-            <div class="cont_misionvision">
-
-            </div>
+        
 
 
 
 
 
-            <footer>
-                <p>&copy; 2024 Universidad Pedagógica y Tecnológica de Colombia - Todos los derechos reservados.</p>
-            </footer>
+        <footer>   
+            <img src="Imagenes/log_uptc.png" alt="Logo De La UPTC" />
+            <p>&copy; Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional <br><strong> UPTC - Departamento de Innovación Académica - 2024 </strong></p>
+        </footer>
 
             <script src="script.js"></script>
 </body>
