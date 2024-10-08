@@ -234,6 +234,7 @@
                 <h2 id="titulo_formulario">Formulario de Registro</h2>
                 <div class="formulario">
                     <form id="registroForm" action="#" method="post">
+                        <!-- Grupo de Usuario y Nombres -->
                         <div class="form-group">
                             <div class="columna">
                                 <label for="usuario">Usuario:</label>
@@ -245,6 +246,7 @@
                             </div>
                         </div>
 
+                        <!-- Grupo de Apellidos y Contraseña -->
                         <div class="form-group">
                             <div class="columna">
                                 <label for="apellidos">Apellidos:</label>
@@ -256,6 +258,7 @@
                             </div>
                         </div>
 
+                        <!-- Grupo de Repetir Contraseña y Correo Electrónico -->
                         <div class="form-group">
                             <div class="columna">
                                 <label for="confirm_password">Repetir Contraseña:</label>
@@ -267,12 +270,34 @@
                             </div>
                         </div>
 
+                        <!-- Grupo de Código Estudiantil y Número de Contacto -->
                         <div class="form-group">
+                            <div class="columna">
+                                <label for="codigo_estudiantil">Código Estudiantil:</label>
+                                <input type="text" id="codigo_estudiantil" name="codigo_estudiantil" required>
+                            </div>
                             <div class="columna">
                                 <label for="telefono">Número de Contacto:</label>
                                 <input type="tel" id="telefono" name="telefono" required>
                             </div>
-                            <!-- Casilla de Términos y Condiciones alineada a la derecha -->
+                        </div>
+
+                        <!-- Selección de Grupo de Investigación -->
+                        <div class="form-group">
+                            <label for="grupo_investigacion">Grupo de Investigación:</label>
+                            <select id="grupo_investigacion" name="grupo_investigacion" required>
+                                <option value="">Seleccione un grupo...</option>
+                                <option value="tica">TICA - Tecnología, Investigación y Ciencia Aplicada</option>
+                                <option value="gti">GTI - Tecno-Innovaciones</option>
+                                <option value="infortec">INFORTEC - Innovación en Formación Tecnológica</option>
+                                <option value="datacom">DATACOM - Análisis de Datos y Computación</option>
+                                <option value="cibertec">CIBERTec - Ciberseguridad y Tecnología Informática</option>
+                                <option value="softinnov">SOFTInnov - Desarrollo y Optimización de Software</option>
+                            </select>
+                        </div>
+
+                        <!-- Términos y condiciones -->
+                        <div class="form-group terms">
                             <div class="columna">
                                 <label class="checkbox-label">
                                     <input type="checkbox" id="terminos" name="terminos" required>
@@ -282,6 +307,7 @@
                             </div>
                         </div>
 
+                        <!-- Botón de envío -->
                         <div class="form-group">
                             <button type="submit">Enviar</button>
                         </div>
