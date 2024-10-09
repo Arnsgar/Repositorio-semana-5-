@@ -17,45 +17,54 @@
             align-items: center;
             text-align: center;
         }
-        .link_imagen:hover {
-            transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
-        }
-        .link{
 
-            justify-content: center;   /* Centra horizontalmente */
-            margin-bottom: 20px;      
+        .link_imagen:hover {
+            transform: scale(1.05);
+            /* Aumenta el tamaño al pasar el mouse */
         }
-        .link_imagen{
-            transition: transform 0.3s; /* Suaviza la transición */
-            width: 50%; 
-          padding-left:25%;
-          padding-right:25%;
-         
+
+        .link {
+
+            justify-content: center;
+            /* Centra horizontalmente */
+            margin-bottom: 20px;
         }
-        
-        .tablaInfo{
-          color:white;
-         
+
+        .link_imagen {
+            transition: transform 0.3s;
+            /* Suaviza la transición */
+            width: 50%;
+            padding-left: 25%;
+            padding-right: 25%;
+
         }
-        
-               
-                
-        
+
+        .tablaInfo {
+            color: white;
+
+        }
+
+
+
+
         a {
-          color:white;
-                    text-decoration: none; /* Quita el subrayado del enlace */
-                }
-                a:hover {
-                  color:rgba(250,250,250,0.5);  
-                  text-decoration: underline; /* Subraya el enlace al pasar el ratón */
-                }
-        
-        h4{
-          color:white;
-          background-color:rgb(0,0,0,0.3);
-          padding-left:3%;
+            color: white;
+            text-decoration: none;
+            /* Quita el subrayado del enlace */
         }
-        
+
+        a:hover {
+            color: rgba(250, 250, 250, 0.5);
+            text-decoration: underline;
+            /* Subraya el enlace al pasar el ratón */
+        }
+
+        h4 {
+            color: white;
+            background-color: rgb(0, 0, 0, 0.3);
+            padding-left: 3%;
+        }
+
 
         .perfil img {
             width: 40%;
@@ -80,7 +89,7 @@
         }
 
         .contenidoGI {
-           
+
             display: none;
             /* Oculta el contenido inicialmente */
             padding: 15px;
@@ -93,7 +102,7 @@
         }
 
         .contenidoGI.mostrar {
-            overflow-y: auto;  
+            overflow-y: auto;
             display: block;
             opacity: 1;
             max-height: 500px;
@@ -422,10 +431,15 @@
         .modal-contenido {
             background-color: white;
             margin: auto;
-            padding: 30px;
+            padding: 0;
+            /* Ajustamos el padding aquí */
             border-radius: 15px;
             width: 90%;
             max-width: 600px;
+            max-height: 90vh;
+            /* Altura máxima para permitir el desplazamiento */
+            overflow: hidden;
+            /* Oculta el desbordamiento del modal */
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
             border: 2px solid #ffcc00;
             position: relative;
@@ -465,7 +479,23 @@
             border-radius: 10px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
             background-color: #f9f9f9;
-            /* Fondo claro */
+            max-height: 70vh;
+            /* Altura máxima del formulario */
+            overflow-y: auto;
+            /* Permite el desplazamiento vertical */
+        }
+
+        /* Asegúrate de que el formulario sea desplazable en móviles */
+        @media (max-width: 600px) {
+            .modal-contenido {
+                max-height: 90vh;
+                /* Altura máxima del modal */
+            }
+
+            .formulario {
+                max-height: 70vh;
+                /* Altura máxima del formulario en móviles */
+            }
         }
 
         .formulario label {
@@ -477,7 +507,8 @@
             /* Sombra del texto */
         }
 
-        .formulario input,#grupo_investigacion {
+        .formulario input,
+        #grupo_investigacion {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
@@ -487,10 +518,11 @@
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        #grupo_investigacion:focus{
+        #grupo_investigacion:focus {
             border-color: #ffcc00;
             outline: none;
         }
+
         .formulario input:focus {
             border-color: #ffcc00;
             outline: none;
