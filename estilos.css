@@ -659,5 +659,8 @@
                 display: flex;
                 overflow-x: auto;
             }
+            .formulario input,#grupo_investigacion{
+               width:90%;
+            }
               
         }
