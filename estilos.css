@@ -158,9 +158,9 @@
 
             font-size: 25px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            background-color: rgb(74, 133, 192);
+            background: linear-gradient(rgb(74, 133, 192), rgba(16, 88, 182, 0.685));    
             /* Color de la parte delantera */
-
+           
         }
 
         .detras,
@@ -582,13 +582,50 @@
             color: #ffcc00;
         }
 
+        /*Diseño Responsive*/
         /* Asegura que las dos columnas se mantengan en móviles */
-        @media (max-width: 600px) {
+        @media (max-width: 900px) {
+           
+           
             .form-group {
                 flex-direction: column;
             }
+            .formulario input,
+    #grupo_investigacion {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .detras,.detras2{
+        font-size: 11px;
+        overflow: auto;
+    }
+    
+
+    .formulario button[type="submit"] {
+        padding: 12px;
+    }
+    header{
+        grid-template-columns: 1fr 0.4fr;
+    }
 
             .columna {
                 width: 100%;
             }
+            .informacion_texto {
+                word-spacing: 1.2em;
+            }
+            .asignaturas {
+                font-size: 11px;
+            }
+            .titulo_principal {
+                  font-size: 20px; /* Ajuste del tamaño de fuente para pantallas móviles */
+                }
+            body{
+                font-size: 75%;
+            }
+            nav{
+                display: flex;
+                overflow-x: auto;
+            }
+              
         }

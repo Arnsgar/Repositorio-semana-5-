@@ -23,9 +23,9 @@ function ajustarTexto() {
     const textoVision = document.getElementById('detras2');
 
     if (window.innerWidth <= 1000) {
-        textoMision.textContent = 'mision resumido.';
-        textoVision.textContent = 'vision resumida';
-
+        textoMision.textContent = 'El programa de TPSI busca formar tecnólogos éticos y competentes en sistemas informáticos y TIC, capacitados para contribuir al desarrollo empresarial y nacional mediante el diseño y la implementación de soluciones tecnológicas.';
+        textoVision.innerHTML = "<br>-----------------------------------Ser el Programa de mayor calidad en el país, con amplia cobertura nacional, asegurando que sus egresados tengan acceso laboral inmediato y la capacidad de emprender. Busca formar tecnólogos que respondan a las demandas del sector empresarial, utilizando TIC y modelos educativos adecuados, respaldados por un cuerpo docente comprometido con la mejora continua y la interdisciplinariedad.";
+                                       
     } else {
         textoMision.textContent = 'El programa de Tecnología en Programación de Sistemas Informático tiene como misión: formar tecnólogos con valores éticos y morales, que desarrollar habilidades y destrezas fundamentadas en el conocimiento específico de los sistemasinformáticos y las TIC, para que contribuyan al desarrollo y la competitividad de las empresas y del país. Apoyando procesos de diseño, modernización e implantación de soluciones de software y tecnología en la empresa.';
         textoVision.textContent = 'Ser el programa de Tecnología en Programación de Sistemas Informáticos de mayor calidad en el país, y de la misma manera tener la mayor cobertura posible a  nivel nacional, de manera que los Tecnólogos egresados de este programa tengan acceso laboral inmediato y la capacidad de formar su propia empresa, para que contribuyan al desarrollo de su región y del país.; lograr a mediano plazo la formación de Tecnólogos en Programación de Sistemas Informáticos que atiendan las necesidades que el medio empresarial exige, utilizando las TIC, modelos educativos adecuados y un grupo de docentes comprometido con el mejoramiento continuo del programa, bajo un marco de interdisciplinaridad y mayor cobertura nacional.';
