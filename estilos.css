@@ -2,15 +2,19 @@ body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 25px;
-    background-color: white; /* Fondo blanco uniforme */
+    font-size: 20px;
+    background-color: white;
+    /* Fondo blanco uniforme */
 }
+
 
 header {
     display: grid;
     grid-template-columns: 1fr 0.13fr;
-    background-color: rgb(255, 255, 255); /* Fondo blanco */
-    color: black; /* Texto en negro */
+    background-color: rgb(255, 255, 255);
+    /* Fondo blanco */
+    color: black;
+    /* Texto en negro */
     padding-left: 17px;
     padding-right: 17px;
     padding-bottom: 17px;
@@ -32,6 +36,10 @@ header {
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
+    max-width: 100%;
+    /* Asegurar que las imágenes no se desborden */
+    height: auto;
+    /* Mantener la relación de aspecto */
 }
 
 .tablaInfo {
@@ -44,15 +52,20 @@ a {
 }
 
 a:hover {
-    color: rgb(255, 255, 255); /* Cambia a blanco al pasar el ratón */
+    color: rgb(255, 255, 255);
+    /* Cambia a blanco al pasar el ratón */
     text-decoration: underline;
 }
 
 h1 {
-    font-weight: bold; /* Negrita */
-    color: black; /* Letra en negro */
-    background-color: white; /* Fondo amarillo */
-    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3); /* Efecto 3D */
+    font-weight: bold;
+    /* Negrita */
+    color: black;
+    /* Letra en negro */
+    background-color: white;
+    /* Fondo amarillo */
+    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+    /* Efecto 3D */
     font-size: 58px;
 }
 
@@ -61,13 +74,99 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: bold; /* Negrita */
-    color: black; /* Letra en negro */
-    background-color: yellow; /* Fondo amarillo */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efecto 3D */
+    font-weight: bold;
+    /* Negrita */
+    color: black;
+    /* Letra en negro */
+    background-color: yellow;
+    /* Fondo amarillo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Efecto 3D */
     padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra adicional */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra adicional */
     font-size: 38px;
+}
+
+/* Para pantallas pequeñas (celulares) */
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+        /* Disminuir el tamaño de fuente para dispositivos más pequeños */
+    }
+
+    h1 {
+        font-size: 30px;
+        /* Ajustar el tamaño del título */
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 24px;
+        /* Ajustar el tamaño de los subtítulos */
+    }
+
+    .link_imagen {
+        width: 100%;
+        /* Hacer que las imágenes ocupen el 100% del ancho */
+        padding-left: 0;
+        /* Eliminar el padding lateral */
+        padding-right: 0;
+    }
+
+    .pestañas {
+        grid-template-columns: repeat(1, 1fr);
+        /* Cambiar a una sola columna en pantallas pequeñas */
+    }
+
+    .cajas_mv {
+        flex-direction: column;
+        /* Alinear las cajas en columna en lugar de fila */
+    }
+
+    .contenedor_botones .boton {
+        font-size: 24px;
+        /* Ajustar el tamaño del botón */
+    }
+
+    .tablaInfo {
+        font-size: 16px;
+        /* Ajustar el tamaño de la fuente de la tabla */
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 22px;
+        /* Ajustar el tamaño de fuente */
+    }
+
+    h1 {
+        font-size: 40px;
+        /* Ajustar el tamaño del título */
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 30px;
+        /* Ajustar el tamaño de los subtítulos */
+    }
+
+    .pestañas {
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambiar a 2 columnas */
+    }
 }
 
 .perfil img {
@@ -95,14 +194,16 @@ h6 {
     margin-bottom: 20px;
 }
 
-/* Grid para los grupos de investigación (3 columnas x 2 filas) */
+/* Grid para los grupos de investigación */
 .pestañas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas en pantallas grandes */
     grid-gap: 20px;
     margin-bottom: 20px;
 }
 
+/* Estilo de las pestañas */
 .pestaña {
     border: 1px solid #ccc;
     padding: 15px;
@@ -156,6 +257,35 @@ h6 {
     text-decoration: underline;
 }
 
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    .pestañas {
+        grid-template-columns: repeat(1, 1fr);
+        /* Cambiar a 1 columna en pantallas pequeñas */
+    }
+
+    .pestaña {
+        padding: 10px;
+        /* Ajustar padding para dispositivos pequeños */
+    }
+
+    #titulo_gruposI {
+        font-size: 28px;
+        /* Ajustar tamaño del título */
+    }
+
+    .pestaña h3 {
+        font-size: 20px;
+        /* Ajustar tamaño de los títulos de las pestañas */
+    }
+}
+
+
+/* MISION VISION */
+
+
 .cajas_mv {
     display: flex;
     gap: 20px;
@@ -165,20 +295,24 @@ h6 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Caja de visión y misión */
 .caja_vision,
 .caja_mision {
     width: 100%;
     height: 200px;
     transform-style: preserve-3d;
-    transition: transform 4s;
+    transition: transform 0.4s;
+    /* Ajustado para que el efecto sea más rápido */
 }
 
+/* Efecto hover para las cajas */
 .caja_vision:hover,
 .caja_mision:hover {
     transform: rotateY(180deg);
     position: relative;
 }
 
+/* Frentes de las cajas */
 .frente,
 .frente2 {
     overflow: hidden;
@@ -191,9 +325,10 @@ h6 {
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Efecto 3D */
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Detrás de las cajas */
 .detras,
 .detras2 {
     overflow: hidden;
@@ -208,9 +343,10 @@ h6 {
     color: rgb(255, 255, 255);
 }
 
+/* Estilos de fondo */
 .frente,
 .frente2 {
-    font-size: 58px;
+    font-size: 48px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: linear-gradient(rgb(255, 242, 0), rgb(255, 242, 0));
 }
@@ -222,6 +358,7 @@ h6 {
     overflow: auto;
 }
 
+/* Estilos de texto */
 .asignaturas {
     text-align: left;
     padding-left: 10%;
@@ -243,10 +380,11 @@ h6 {
     text-align: center;
 }
 
+/* Botones */
 .contenedor_botones .boton {
     margin: 5px;
     padding: 10px 15px;
-    font-size: 48px;
+    font-size: 38px;
     cursor: pointer;
     box-shadow: 5px 15px 6px 1px black;
     border-radius: 1px double black;
@@ -255,16 +393,19 @@ h6 {
     z-index: -1;
 }
 
+/* Resumen */
 .resumen {
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
 
+/* Ajuste de párrafos en resumen */
 .resumen p {
     width: 30%;
 }
 
+/* Información */
 .informacion {
     display: flex;
     align-items: flex-end;
@@ -279,6 +420,7 @@ h6 {
     color: black;
 }
 
+/* Contenido principal */
 .contenido {
     border: 2px solid #00000000;
     padding: 1%;
@@ -287,6 +429,7 @@ h6 {
     background-color: white;
 }
 
+/* Estilo de imagen */
 .imagen img {
     display: block;
     margin-left: auto;
@@ -297,6 +440,7 @@ h6 {
     position: center;
 }
 
+/* Navegación */
 nav {
     background-color: yellow;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -315,6 +459,7 @@ nav a {
     font-weight: bold;
 }
 
+/* Sección principal */
 section {
     padding: 20px;
     color: black;
@@ -327,6 +472,7 @@ p {
     line-height: 1.6;
 }
 
+/* Estilo de títulos */
 [id^="titulo_"] {
     background-color: yellow;
     padding-left: 68px;
@@ -334,6 +480,7 @@ p {
     box-shadow: 0 8px 3px rgba(0, 0, 0, 0.7);
 }
 
+/* Estilo de pie de página */
 footer {
     display: flex;
     gap: 20px;
@@ -353,6 +500,7 @@ footer img {
     height: 60%;
 }
 
+/* Estilos para botones de misión y visión */
 #botonMision,
 #botonVision {
     background-color: black;
@@ -363,9 +511,60 @@ footer img {
     margin: 10px;
 }
 
+/* Efecto hover para botones */
 #botonMision:hover,
 #botonVision:hover {
     background-color: #444;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    .cajas_mv {
+        flex-direction: column;
+        /* Cambiar a columna en pantallas pequeñas */
+        align-items: center;
+        /* Centrar los elementos */
+    }
+
+    .caja_vision,
+    .caja_mision {
+        height: 150px;
+        /* Ajustar la altura para pantallas pequeñas */
+    }
+
+    .frente,
+    .frente2 {
+        font-size: 30px;
+        /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+
+    .contenedor_botones {
+        margin-left: 0;
+        /* Alinear botones al centro */
+        margin-right: 0;
+    }
+
+    .contenedor_botones .boton {
+        font-size: 24px;
+        /* Ajustar tamaño de los botones */
+    }
+
+    .resumen {
+        flex-direction: column;
+        /* Cambiar a columna en pantallas pequeñas */
+    }
+
+    .resumen p {
+        width: 100%;
+        /* Hacer que el párrafo ocupe el 100% en pantallas pequeñas */
+    }
+
+    .informacion img {
+        width: 80%;
+        /* Ajustar el tamaño de la imagen */
+    }
 }
 
 
