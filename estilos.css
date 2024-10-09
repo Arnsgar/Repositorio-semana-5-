@@ -205,7 +205,7 @@ h6 {
     cursor: pointer;
     box-shadow: 5px 15px 6px 1px yellow;
     border-radius: 1px double yellow;
-    background-color: #000000;
+    background-color: #ffffff;
     clip-path: polygon(50% -40%, -10% 110%, 110% 110%);
     z-index: -1;
 }
