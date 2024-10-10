@@ -85,6 +85,7 @@ h6 {
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     /* Sombra adicional */
+    text-align: center;
     font-size: 38px;
 }
 
@@ -107,13 +108,14 @@ h6 {
     h4,
     h5,
     h6 {
+        text-align: left;
         font-size: 24px;
         /* Ajustar el tamaño de los subtítulos */
     }
 
     .link_imagen {
-        width: 100%;
-        /* Hacer que las imágenes ocupen el 100% del ancho */
+        width: 50%;
+        /* Hacer que las imágenes ocupen el 50% del ancho */
         padding-left: 0;
         /* Eliminar el padding lateral */
         padding-right: 0;
